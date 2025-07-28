@@ -8,7 +8,7 @@ export default function Home() {
     if (!inputValue) return
     try {
       const response = await fetch(
-        "https://api.github.com/users/${inputValue}"
+        `https://api.github.com/users/${inputValue}`
       );
       const data = await response.json();
       console.log("User Data", data);
